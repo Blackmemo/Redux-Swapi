@@ -20,6 +20,7 @@ class CharacterListView extends React.Component {
     }
     return (
       <div className="CharactersList_wrapper">
+      <h1>Characters:</h1>
         <CharacterList characters={this.props.characters} />
       </div>
     );
