@@ -16,14 +16,17 @@ class CharacterListView extends React.Component {
   render() {
     console.log(this.props.characters)
     if (this.props.fetching) {
+      return (
      <Loader type='Ball-Triangle' color='#00BFFF' height='90' width='60' />
-    }
+      )
+    } else {
     return (
       <div className="CharactersList_wrapper">
       <h1>Characters:</h1>
         <CharacterList characters={this.props.characters} />
       </div>
     );
+    }
   }
 }
 
